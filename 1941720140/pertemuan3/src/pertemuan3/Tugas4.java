@@ -2,7 +2,7 @@ package pertemuan3;
 import java.util.Scanner;
 public class Tugas4 {
     public static void main(String[] args) {        
-        Scanner sc = new Scanner(System.in);
+        Scanner sholikin = new Scanner(System.in);
         System.out.println("Pemilihan Presiden BEM Tahun 2020");
         System.out.println();
         System.out.println("Kandidat Calon Presiden BEM");
@@ -13,7 +13,7 @@ public class Tugas4 {
                 
         System.out.println();
         System.out.print("Masukkan jumlah terkumpul suara : ");
-        int n = sc.nextInt();
+        int n = sholikin.nextInt();
         System.out.println();
         
         Bem pilih = new Bem(n);
@@ -21,7 +21,7 @@ public class Tugas4 {
         System.out.println("Masukkan suara terpilih dengan nomor kandidat");
         for(int i = 0; i < pilih.n; i++){    
             System.out.print("Suara ke-" + (i+1) + " : ");
-            pilih.suara[i] = sc.nextInt();
+            pilih.suara[i] = sholikin.nextInt();
         }
         
         pilih.pemilihan(0);

@@ -1,16 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package tugass3;
+package pertemuan3;
 import java.util.Scanner;
-
-/**
- *
- * @author REYHAN SYAMSSUDIN
- * NIM 1941720210
- */
 public class Tugas6 {
     public String namaMhs[];
     public int jmlh;
@@ -38,20 +27,20 @@ public class Tugas6 {
         return 0;
     }
     public static void main(String[] args){
-        Scanner angka= new Scanner(System.in);
-        Scanner huruf= new Scanner(System.in);
+        Scanner sholikin= new Scanner(System.in);
+        Scanner micin= new Scanner(System.in);
         
         System.out.println("====PROGRAM PERHITUNGAN RATA- RATA DC====");
         System.out.print("> Masukkan jumlah mahasiswa : ");
-        int n= angka.nextInt();
+        int n= sholikin.nextInt();
         
         Tugas6 arr = new Tugas6(n);
         System.out.println();
         for(int i=0;i<n;i++){
             System.out.print("> Masukkan nama mahasiswa" + (i+1) + " :");
-            arr.namaMhs[1]=huruf.nextLine();
+            arr.namaMhs[1]=micin.nextLine();
             System.out.print("> Masukkan nilai :");
-            arr.rata[1] = angka.nextInt();
+            arr.rata[1] = sholikin.nextInt();
             System.out.println();   
         }
         for(int i=0; i<arr.jmlh; i++){

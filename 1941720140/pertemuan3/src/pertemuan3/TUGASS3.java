@@ -1,17 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package TUGASS3;
-
+package pertemuan3;
 import java.util.Scanner;
-
-/**
- *
- * @author REYHAN SYAMSSUDIN
- * NIM 1941720210
- */
 public class TUGASS3 {
     
     public String namaMhs;
@@ -26,30 +14,30 @@ public class TUGASS3 {
         nilaiUas = una;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Scanner cs = new Scanner(System.in);
+        Scanner sholikin = new Scanner(System.in);
+        Scanner micin = new Scanner(System.in);
         String nama;
         int ntug,nk,nut,una;
         double total = 0;
         System.out.print("Masukkan Jumlah Mahasiswa : ");
-        int n = sc.nextInt();
+        int n = sholikin.nextInt();
 
         TUGASS3[] tn = new TUGASS3[n];             
         for(int i=0;i<n;i++){
             System.out.println("========================================");
             System.out.print("Nama Mahasiswa : ");
-            nama = cs.next();            
+            nama = micin.next();            
             System.out.println("");
             System.out.println("========================================");
             System.out.println("Masukkan Nilai Mahasiswa  ");            
             System.out.print("Nilai Tugas   : ");
-            ntug = sc.nextInt();
+            ntug = sholikin.nextInt();
             System.out.print("Nilai Kuis    : ");
-            nk = sc.nextInt();
+            nk = sholikin.nextInt();
             System.out.print("Nilai UTS     : ");
-            nut = sc.nextInt();
+            nut = sholikin.nextInt();
             System.out.print("Nilai UAS     : ");
-            una = sc.nextInt();
+            una = sholikin.nextInt();
             System.out.println("========================================");
             tn[i] = new TUGASS3(nama, ntug, nk, nut, una);          
         }
