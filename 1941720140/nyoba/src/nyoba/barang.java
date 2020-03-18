@@ -16,6 +16,7 @@ public class barang {
     void tampilBarang(){
         System.out.println("Nama = "+namaBarang);
         System.out.println("Jenis = "+jenisBarang);
+        System.out.println("Stok = "+stok);
         System.out.println("Harga Satuan = "+hargaSatuan);
     }
     

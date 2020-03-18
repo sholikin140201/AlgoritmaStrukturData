@@ -1,19 +1,33 @@
 package arraybalok;
+import java.util.Scanner;
 public class segitiga {
     
     public int alas, tinggi;
     
+    segitiga(){
+    }
     public static void main (String[] args){
+        Scanner sholikin=new Scanner(System.in);
         segitiga[] sgtga=new segitiga[4];
         
-        sgtga[0]=new segitiga(4, 10);
-        sgtga[1]=new segitiga(20, 10);
-        sgtga[2]=new segitiga(15, 6);
-        sgtga[3]=new segitiga(25, 10);
+        for(int i=0; i<4; i++){
+            sgtga[0]=new segitiga();
+            System.out.println("---------------");
+            System.out.println("Segitiga ke-"+i);
+            System.out.print("Masukkan Alas: ");
+            sgtga[0].alas=sholikin.nextInt();
+            System.out.print("Masukkan Tinggi: ");
+            sgtga[0].tinggi=sholikin.nextInt();
+        }
         
-        for (int i=0; i<4; i++){
-            System.out.println("Luas: "+hitungLuas(sgtga[i].alas, sgtga[i].tinggi));
-            System.out.println("Keliling: "+hitungKeliling(sgtga[i].alas, sgtga[i].tinggi));
+        System.out.println("~~~~~~");
+        System.out.println("Hasil");
+        System.out.println("~~~~~~");
+        
+        for(int i=0; i<4; i++){
+            System.out.println("Segitiga ke-"+i);
+            System.out.println("Alas: "+sgtga[0].alas+", Tinggi: "+sgtga[0].tinggi);
+            System.out.println("--------------------------------");
         }
     }
     

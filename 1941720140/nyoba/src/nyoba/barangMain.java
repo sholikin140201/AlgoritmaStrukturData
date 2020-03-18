@@ -12,7 +12,7 @@ public class barangMain {
         int hargaTotal = b1.hitungHargaTotal(4);
         System.out.println("Harga 4 buah = "+hargaTotal);
         
-        barang b2=new barang ("Logitech", "Wireless Mouse", 150000, 25);
+        barang b2=new barang ("Logitech", "Wireless Mouse", 25, 250000);
         b2.tampilBarang();
     }
 }
