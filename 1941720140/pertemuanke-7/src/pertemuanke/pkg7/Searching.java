@@ -1,6 +1,6 @@
-package pertemuan7;
+package pertemuanke.pkg7;
 public class Searching {
-    public int[] data;
+        public int[] data;
     public int jumData;
     
     public Searching(int[] Data, int jmlData){
@@ -49,4 +49,5 @@ public class Searching {
             System.out.println("Data: " + x + " tidak ditemukan ");
         }
     }
+
 }

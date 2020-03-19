@@ -1,4 +1,4 @@
-package pertemuan7;
+package pertemuanke.pkg7;
 import java.util.Scanner;
 public class SearchingMain {
     public static void main(String[] args) {

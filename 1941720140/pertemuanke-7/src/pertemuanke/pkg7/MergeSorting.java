@@ -1,5 +1,5 @@
-package pertemuan7;
-public class MergeSort {
+package pertemuanke.pkg7;
+    public class MergeSorting {
     int data[] = {10,40,30,50,70,20,100,90};
     public void mergeSort(int[] data){
         sort(data,0,7);
