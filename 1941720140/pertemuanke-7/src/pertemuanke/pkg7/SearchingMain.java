@@ -5,6 +5,7 @@ public class SearchingMain {
         Scanner sholikin = new Scanner(System.in);
         int data[] = {10, 40, 30, 50, 70, 20, 100, 90};
         int dataB[] = {100, 90, 80, 70, 60, 50, 40, 30};
+        int dataC[] = {100, 90, 80, 70, 60, 50, 40, 30};
         int cari;
         Searching pencarian = new Searching(data, 8);
         Searching pencarianB = new Searching(dataB, 8);
@@ -13,9 +14,18 @@ public class SearchingMain {
         pencarian.TampilData();
         System.out.println("Isi Array Binary: ");
         pencarianB.TampilData();
+        System.out.println("-------------------------");
+        System.out.println("Sorting dengan merge sort");
+        MergeSorting mSort = new MergeSorting();
+        System.out.println("Data Awal");
+        mSort.printArray(dataC);
+        mSort.mergeSort(dataC);
+        System.out.println("Setelah diurutkan");
+        mSort.printArray(dataC);
         System.out.println("");
         System.out.print("Masukkan data yang ingin dicari: ");
         cari=sholikin.nextInt();
+        
         
         System.out.println("Menggunakan sequential search");
         int posisi = pencarian.FindSeqSearch(cari);
